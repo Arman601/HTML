@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reg. Form</title>
+
+    <style>
+        * {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Course Registration form</h1>
+    <form style="width:   600px;">
+        <fieldset>
+            <legend style="color: blue;">Personal Details</legend>
+            <table>
+                <tr>
+                    <td> <label for="first  name">First Name</label></td>
+                    <td> <input type="text" placeholder="Ex:Arman" required></td>
+                </tr>
+                <tr>
+                    <td> <label for="surname">surname</label></td>
+                    <td>
+                        <input type="text" placeholder="EX:Hasan">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Mob no">Mobile number</label></td>
+                    <td>
+                        <input type="tel" placeholder="EX:9608079847">
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="Email">Email</label></td>
+                    <td><input type="email" placeholder="EX:arman@gmail.com"><br></td>
+                </tr>
+                <tr>
+                    <td> <label for="Password">Password</label></td>
+                    <td>
+                        <input type="password" placeholder="min 6 characters">
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="conf password">Confirm Password</label></td>
+                    <td> <input type="password" placeholder="min 6 characters"><br></td>
+                </tr>
+                <tr>
+                    <td> <label for="DOB">DOB</label></td>
+                    <td> <input type="date"><br></td>
+                </tr>
+                <tr>
+                    <td> <label for="Gender">Gender</label>
+
+                        <input name="Gender" type="radio" value="Male">
+                        <label for="Gender">Male</label>
+
+                        <input name="Gender" type="radio" value="Female">
+                        <label for="Gender">Female</label>
+
+                        <input name="Gender" type="radio" value="Custome">
+                        <label for="Gender">Custom</label>
+
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> <label for="choose country">Select country</label>
+                        <!-- <input type="checkbox"><br> -->
+                        <select name="" id="">
+                            <option value="select opt">--select country--</option>
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                            <option value="China">China</option>
+                        </select><br>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> <label for="upload picture">upload picture</label></td>
+                    <td> <input type="file" multiple><br></td>
+                </tr>
+            </table>
+
+            <button style="border-radius: 10px; ">reset</button>
+        </fieldset>
+
+
+
+
+        <fieldset style=" width: 600px; height: 150px;">
+            <legend style="color: blue;">Course Details</legend>
+            <label for="">Select Course</label><br>
+
+
+            <select name="" id="">
+                <option value="">--Select course--</option>
+                <option value="">java</option>
+                <option value="">python</option>
+                <option value="">Mern Stack</option>
+            </select><br>
+
+            <label for="">Delivery Mode</label>
+            <input type="checkbox">
+            <label for="">Onlone</label>
+            <input type="checkbox">
+            <label for="">Ofline</label><br>
+
+            <label for="">Comments</label><br>
+
+            <textarea name="" id="" rows="5" cols="40"></textarea>
+        </fieldset>
+        <button style="border-radius: 10px; ">Submit</button>
+
+    </form>
+</body>
+
+</html>
